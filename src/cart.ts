@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BehaviorSubject } from "rxjs";
 
-const API_SERVER = "http://localhost:8080";
+const API_SERVER = import.meta.env.VITE_API_URL;
 
 export const jwt = new BehaviorSubject(null);
 export const cart = new BehaviorSubject(null);
