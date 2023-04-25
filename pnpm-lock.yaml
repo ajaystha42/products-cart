@@ -10,6 +10,9 @@ dependencies:
   react-router-dom:
     specifier: ^6.10.0
     version: 6.10.0(react-dom@18.2.0)(react@18.2.0)
+  remixicon:
+    specifier: ^3.2.0
+    version: 3.2.0
   rxjs:
     specifier: ^7.8.0
     version: 7.8.0
@@ -1852,6 +1855,10 @@ packages:
     dependencies:
       picomatch: 2.3.1
     dev: true
+
+  /remixicon@3.2.0:
+    resolution: {integrity: sha512-ADh4EQE4UGtm9GHqD+TIfVp1b0zeWso6efaMAnejdB6/7Z1W02Ka5K8khQaz+LNgIqC6dSZxCvXMWNalYWHiNQ==}
+    dev: false
 
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}

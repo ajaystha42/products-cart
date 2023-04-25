@@ -9,8 +9,15 @@ export default defineConfig({
       name: "cart",
       remotes: {
         home: "http://localhost:3000/assets/remoteEntry.js",
+        pdp: "http://localhost:3001/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom", "react-router-dom"],
+      shared: ["react", "react-dom", "react-router-dom", "rxjs"],
+      exposes: {
+        "./cart": "./src/cart.ts",
+        "./Login": "./src/Login.tsx",
+        "./MiniCart": "./src/MiniCart.tsx",
+        "./CartContent": "./src/CartContent.tsx",
+      },
     }),
   ],
   build: {
