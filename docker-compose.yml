@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    build: 
+      context: .
+    volumes:
+      - .:/home
+    ports:
+      - 3002:3002
+    image: products_cart:1.0
+    container_name: products_cart
+    command: pnpm serve --host 0.0.0.0
+
